@@ -143,6 +143,7 @@ public:
   void setTiming(tsl2591IntegrationTime_t integration);
   uint16_t getLuminosity(uint8_t channel);
   uint32_t getFullLuminosity();
+  uint16_t read16(uint8_t reg);
 
   tsl2591IntegrationTime_t getTiming();
   tsl2591Gain_t getGain();
@@ -162,7 +163,6 @@ private:
 
   void write8(uint8_t r);
   void write8(uint8_t r, uint8_t v);
-  uint16_t read16(uint8_t reg);
   uint8_t read8(uint8_t reg);
 
   tsl2591IntegrationTime_t _integration;
