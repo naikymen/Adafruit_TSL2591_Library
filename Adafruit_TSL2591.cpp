@@ -488,6 +488,13 @@ uint8_t Adafruit_TSL2591::read8(uint8_t reg) {
   return buffer[0];
 }
 
+/************************************************************************/
+/*!
+    @brief  Reads a 16-bit value from the specified register on the sensor
+    @param  reg The register address to read from
+    @return The 16-bit value read from the specified register
+*/
+/**************************************************************************/
 uint16_t Adafruit_TSL2591::read16(uint8_t reg) {
   uint8_t buffer[2];
   buffer[0] = reg;
